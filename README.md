@@ -5,6 +5,7 @@ A minimal Result interface for TypeScript in a 307-byte package.
 
 ```ts
 import { Ok, Err } from '@koerismo/result';
+
 // Or, use the globals:
 // import '@koerismo/result/global';
 
@@ -27,7 +28,7 @@ else            console.log('Result is error!');
 console.log('Either Value:', result.value);
 
 // The value can be unwrapped with a fallback via .unwrapOr(...):
-console.log('Value or Fallback:', result.unwrapOr('johnFallback'));
+console.log('Value or Fallback:', result.unwrapOr('john fallback'));
 
 // .unwrap() Throws (-1) if the function returned Err(-1).
 console.log('Correct Value:', result.unwrap());

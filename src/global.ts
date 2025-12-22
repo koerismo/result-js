@@ -1,4 +1,4 @@
-import { Ok as _Ok, Err as _Err, type OkResult, type ErrResult } from './index.js';
+import { Ok as _Ok, Err as _Err } from './index.js';
 
 declare global {
 	var Ok: typeof _Ok;

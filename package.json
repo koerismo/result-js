@@ -3,10 +3,9 @@
 	"description": "A miniscule Result interface for TypeScript.",
 	"version": "0.9.0",
 	"author": "Koerismo",
-	"license": "LGPL-3.0-or-later",
+	"license": "MPL-2.0",
 	"type": "module",
 	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
 	"exports": {
 		".": "./dist/index.js",
 		"./global": "./dist/global.js"
