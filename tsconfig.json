@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"emitDeclarationOnly": true,
+		"strict": true,
+		"alwaysStrict": false,
+		"rootDir": "src",
+		"outDir": "dist"
+	},
+	"include": ["src/"]
+}
