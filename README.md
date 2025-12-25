@@ -1,5 +1,5 @@
 # Result
-A minimal Result interface for TypeScript in a 307-byte package.
+A minimal Result interface for TypeScript in a 300-byte package.
 
 ## Example
 
