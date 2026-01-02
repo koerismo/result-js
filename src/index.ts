@@ -11,6 +11,8 @@ export const Err = <E>(error: E): ErrResult<E> => {
 	return new Result(false, error); 
 }
 
+export type ResultType<V, E = V> = Result<V, E, true> | Result<V, E, false>;
+
 /**
  * Represents a value and an associated `ok` value.
  */
