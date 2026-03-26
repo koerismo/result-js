@@ -1,5 +1,11 @@
+/** Shorthand: Represents an ok {@link Result} result. */
 export type OkResult<T> = Result<T, any, true>;
+
+/** Shorthand: Represents an error {@link Result} result. */
 export type ErrResult<T> = Result<any, T, false>;
+
+/** Used to declare separate ok/error {@link Result} types. */
+export type ResultType<V, E = V> = Result<V, E, true> | Result<V, E, false>;
 
 /** Creates a new ok {@link Result} with the provided value. */
 export const Ok = <V>(value: V): OkResult<V> => {
@@ -11,10 +17,10 @@ export const Err = <E>(error: E): ErrResult<E> => {
 	return new Result(false, error); 
 }
 
-export type ResultType<V, E = V> = Result<V, E, true> | Result<V, E, false>;
-
 /**
  * Represents a value and an associated `ok` value.
+ * 
+ * Use {@link ResultType} instead of this class when writing type annotations!
  */
 export class Result<V, E = V, O extends boolean = boolean> {
 	constructor(
