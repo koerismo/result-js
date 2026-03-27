@@ -1,7 +1,7 @@
 {
 	"name": "@koerismo/result",
 	"description": "A miniscule Result interface for TypeScript.",
-	"version": "0.9.1",
+	"version": "0.9.2",
 	"author": "Koerismo",
 	"license": "MPL-2.0",
 	"type": "module",
