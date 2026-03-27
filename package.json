@@ -12,6 +12,7 @@
 	},
 	"scripts": {
 		"build": "pnpm run build-code && pnpm run build-types",
+		"build-npm": "npm run build-code && npm run build-types",
 		"build-code": "esbuild ./src/* --minify --platform=neutral --sourcemap --sources-content=false --outdir=./dist/",
 		"build-types": "tsc"
 	},
