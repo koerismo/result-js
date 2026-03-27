@@ -1,12 +1,16 @@
-name: Publish to NPM
+name: Publish
 
 on:
   push:
     tags:
-      - "*"
+      - "v*"
+
+permissions:
+  contents: read
+  id-token: write
 
 jobs:
-  publish:
+  publish_npm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -16,3 +20,9 @@ jobs:
         run: npm run build-npm
       - name: Publish
         run: npm publish
+  publish_jsr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Publish package
+        run: npx jsr publish
